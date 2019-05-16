@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="responsibility_pattern" />
         <module name="strategy_pattern" />
+        <module name="proxy_pattern" />
         <module name="decorator_pattern" />
       </profile>
     </annotationProcessing>
@@ -15,6 +16,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="decorator_pattern" options="-parameters" />
+      <module name="proxy_pattern" options="-parameters" />
       <module name="responsibility_pattern" options="-parameters" />
       <module name="strategy_pattern" options="-parameters" />
     </option>
