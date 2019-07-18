@@ -6,7 +6,7 @@ import com.liudehuang.proxy.impl.OrderServiceImpl;
 
 /**
  * @Author liudehuang
- * @Description //TODO
+ * @Description //静态代理
  * @Date 2019/5/16
  **/
 public class ProxyMain {

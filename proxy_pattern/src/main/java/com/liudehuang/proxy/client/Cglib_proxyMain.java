@@ -6,7 +6,7 @@ import net.sf.cglib.proxy.Enhancer;
 
 /**
  * @Author liudehuang
- * @Description //TODO
+ * @Description //cglib动态代理测试
  * @Date 2019/5/16
  **/
 public class Cglib_proxyMain {

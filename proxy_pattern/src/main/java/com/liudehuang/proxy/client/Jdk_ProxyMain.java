@@ -6,7 +6,7 @@ import com.liudehuang.proxy.jdk_proxy.impl.JdkInvocationHandler;
 
 /**
  * @Author liudehuang
- * @Description //TODO
+ * @Description //jdk动态代理测试
  * @Date 2019/5/16
  **/
 public class Jdk_ProxyMain {
