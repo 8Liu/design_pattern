@@ -21,10 +21,10 @@ public class JdkInvocationHandler implements InvocationHandler {
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        System.out.println(">>>日志收集开始>>>>");
+        System.out.println(">>>jdk日志收集开始>>>>" + proxy.getClass().getClassLoader() );
         // 执行代理对象方法
         Object reuslt = method.invoke(target, args);
-        System.out.println(">>>日志收集结束>>>>");
+        System.out.println(">>>jdk日志收集结束>>>>");
         return reuslt;
     }
 

@@ -1,6 +1,9 @@
 package com.liudehuang.dynamic.proxy;
 
+import com.liudehuang.dynamic.proxy.impl.LdhExtJdkInvocationHandler;
 import com.liudehuang.dynamic.service.OrderService;
+import com.liudehuang.dynamic.service.impl.OrderServiceImpl;
+
 import javax.tools.JavaCompiler;
 import javax.tools.StandardJavaFileManager;
 import javax.tools.ToolProvider;
@@ -39,7 +42,7 @@ public class MyProxy {
                     + getMethodString(methods, classInfo) + rt
                     + "}";
             // 2. 写入到到本地文件中..
-            String filename = "F:\\BaiduNetdiskDownload\\蚂蚁客堂\\code\\$Proxy0.java";
+            String filename = "F:\\百度云盘下载\\code\\$Proxy0.java";
             File f = new File(filename);
             FileWriter fw = new FileWriter(f);
             fw.write(proxyClass);
@@ -77,7 +80,5 @@ public class MyProxy {
         return proxyMe;
     }
 
-    public static void main(String[] args) {
-        newProxyInstance(new JavaClassLoader(), OrderService.class,null);
-    }
+
 }

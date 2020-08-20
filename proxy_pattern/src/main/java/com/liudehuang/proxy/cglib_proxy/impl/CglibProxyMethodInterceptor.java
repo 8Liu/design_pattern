@@ -14,9 +14,9 @@ public class CglibProxyMethodInterceptor implements MethodInterceptor {
 
     @Override
     public Object intercept(Object obj, Method method, Object[] orgs, MethodProxy methodProxy) throws Throwable {
-        System.out.println("<<<<日志收集开始>>>>");
+        System.out.println("<<<<cglib日志收集开始>>>>");
         Object o = methodProxy.invokeSuper(obj, orgs);
-        System.out.println("<<<<日志收集结束>>>>");
+        System.out.println("<<<<cglib日志收集结束>>>>");
         return o;
     }
 }

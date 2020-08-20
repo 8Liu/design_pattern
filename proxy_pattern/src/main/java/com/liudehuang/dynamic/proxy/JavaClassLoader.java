@@ -17,7 +17,7 @@ public class JavaClassLoader  extends ClassLoader {
 
     public JavaClassLoader(){
 //        String classPath=JavaClassLoader.class.getResource("").getPath();
-        String classPath="F:\\BaiduNetdiskDownload\\蚂蚁客堂\\code";
+        String classPath="F:\\百度云盘下载\\code";
         this.classPathFile=new File(classPath);
     }
 
